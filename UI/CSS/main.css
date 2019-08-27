@@ -1,203 +1,139 @@
 *{
     box-sizing: border-box;
     }
-    body {
-        border: 1px solid;
-        width: 100%;
-        line-height: 1.58;
-        font-size: 14px;
-        font-weight: normal;
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-        position: relative;
-        font-style: normal;
-        cursor: default;
-    }
-    a{
-        text-decoration: none;
-    }
-    .MainBox{
-        width:100%;
-        max-height: 1000px; 
-    }
-    .MainBar{
-        position: fixed;
-        background-color: #002255ff;
-        width: 100%;
-        max-height: 500px;
-        float: left;
-        top: 0;
-        z-index: 504;
-        padding: 0 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.15);
-    }
-    .MainBarContainer{
-        flex: 1;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        min-height: 0%;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-    .Logo{
-        height: 10%;
-        width: 100%;
-        margin: 0;
-        background-image: url(/UI/media/img/fm_logo.png);
-        background-size: cover; 
-    }
-    .MainMenu{
-        flex: 1;
-        z-index: 4;
-        margin-left: 8px;
-    }
-    .MainBarContent{
-        display: flex;
-        align-items: center;
-    }
-    .Button{
-        display: flex;
-        font-size: 12px;
-        padding: .8em 2em;
-        margin-right: 15px;
-        min-width: 93px;
-        color: #002255ff;
-        background-color: #ffcc00ff;
-        text-align: center;
-    }
-    .Button:hover{
-        background-color: rgb(241, 213, 97) ;
-        cursor: pointer;
-    }
-    .PageWrapper{
-        display: flex;
-        float: right;
-        background-color: #f9f9f9;
-        width: 100%;
-        min-height: calc(100vh-50px);
-        margin-top: 50px;
-        box-sizing: inherit;
-        border: 1px solid;
-    }
-    form {
-        border: 3px solid#ffcc00ff;
-        border-radius: 10px;
-      }
-    input[type=text], input[type=password] {
-        width: 100%;
-        padding: 15px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-      }
-    input[type=checkbox]{
-        width: 15px;
-        height: 15px;
-        padding: 15px;
-        margin: 15px;
-        display: inline-block;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 8px;
-
-    }
-    button{
-        background-color: #002255ff;
-        border-radius: 10px;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-    }  
-    button:hover {
-        opacity: 0.8;
-      }
-      .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        background-color: #002255ff;
-      }
-      .container {
-        padding: 16px;
-      }
-      .container input{
-        border-radius: 10px;
-      }
-      span.psw {
-        float: right;
-        padding-top: 16px;
-      }      
-    
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0,0.4);
-        padding-top: 60px;
-      }
-      .modal-content {
-        background-color: #ffcc00ff;
-        margin: 5px auto;
-        border: 1px solid #fff;
-        width: 80%;
-      }
-      .close {
-        position: absolute;
-        right: 25px;
-        top: 0; 
-        color: #ffcc00ff;
-        font-size: 35px;
-        font-weight: bold;
-        border-radius: 5px;
-      }
-      .close:hover,
-.close:focus {
-  color: #002255ff;
-  cursor: pointer;
+body{
+    width:100%;
+    display: grid;
+    grid-template-rows: repeat(1fr, 4fr,1fr);
+    grid-gap: 1px; 
+    background-color: white;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline-offset: 3px;
+    border-width: medium; 
 }
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-  }
-  
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-  } 
-  #centraltable{
-    min-height: 600px;
-  }
-  .hor{
+header{
     width: 100%;
-    max-width: 73em;
-    margin: 0 auto 0 auto;
-  }
-  .mftmh{
-    background: #f9f8f8;
-    border-radius: 0;
-    padding: 1.5em 1em;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-gap: 1px;  
+    vertical-align: middle;
+    color: black;
+    text-shadow: 5px 5px 5px grey;
+}
+.logo{
+    background-color:white;
+    align-self: baseline;
 
+}
+.logo img{
+    width: inherit;
+    height: inherit;
+    padding: 1px;
+}
+.credentials{
+    display: grid;
+    grid-template-columns: 0.15fr 0.15fr 1fr ;
+    grid-gap: 1px;
+}
+.userbeacon{
+    background: blue;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.beaconbutton{
+    background-color: darkred;
+    width:70%;
+    align-items: center;
 
-  }
+}
+.beaconbutton a{
+    text-decoration: none;
+    color: white;
+}
+.avatar{
+    background-color: orange;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.userid{
+    background-color: blue;
+    text-align: center;
 
-  
+}
+.usercreds{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+    float: right;
+}
+
+.username{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    align-items: center;
+}
+.firstname{
+    background-color: aqua;
+    text-align: center;
+}
+.name{
+    background-color: blueviolet;
+    text-align: center;
+}
+.MainContent{
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    grid-gap: 1px;
+}
+.formheader{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+}
+.footer{
+    background-color:chartreuse;
+}
+.formheader{
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-shadow: 25px 25px 25px grey;
+}
+.formcore{
+    background-color: crimson;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    justify-self: center;
+}
+.formcore form{
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    justify-items: start;
+    align-items: center;
+    width: 70%;
+    background-color: sandybrown;
+    }
+.formcore input{
+    border-radius: 10px;
+    width: 100%;
+}
+.formcore textarea{
+    border-radius: 10px;
+    width: 100%;
+
+}
+.congratulation{
+    justify-items: center;
+    text-align: center;
+}
+.congcore{
+    justify-items: center;
+    text-align: center;
+}
