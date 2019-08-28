@@ -10,103 +10,113 @@
     <script src="./UI/js/main.js"></script>
    </head>
    <body>
-    <header>
-      <div class="logo">
-        <a href="./UI/HTML/index.html">
-          <img src="./UI/assets/fm_logo.png" alt="FreeMentors">
-        </a>
-      </div>
-      <div class="credentials">
-        <div class="login">
-        <p>SignIn</p>
-        </div>
-        <div class="signup">
-            <p>SignUp</p>
-            </div>
-      </div>
-    </header>
-    <div class="welcome"><h1>Welcome To FreeMentors, The Guidance Platform</h1></div>
-    <div class="MainContent">
-      <div class="featguidefilter">
-         <h3>Filters</h3>
-         <div class="filtercriteria">
-            <i class="searchbutton"></i>
-            <input type="text" placeholder="By city" autocomplete="off">
-         </div>
-         <div class="filtercriteria">
-                <i class="searchbutton"></i>
-                <input type="text" placeholder="By country" autocomplete="country-name">
-         </div>
-         <div class="filtercriteria">
-                    <i class="searchbutton"></i>
-                    <input type="text" placeholder="By occupation" autocomplete="off">
-         </div>
-         <div class="filtercriteria">
-                        <i class="searchbutton"></i>
-                        <input type="text" placeholder="By expertize" autocomplete="off">
-         </div>
-      </div>
-      <div class="featguidecore">
-        <div class="featguidesort">
-            <div class="sortitle">
-                <label>Sort by</label>
-            </div>
-            <select name="guides" class="guidesort">
-                <option value="0" selected>Sort by</option>
-                <option value="1">ID</option>
-                <option value="2">City</option>
-                <option value="3">Country</option>
-                <option value="4">Occupation</option>
-                <option value="5">Expertise</option>
-            </select>
-        </div>
-        <div class="featguideindcontainer">
-          <div class="indcontainer">
-              <a href="">
-                  <section class="indimg">
-                      <div class="indimgcontainer">
-                          <img src="" alt="guide">
+        <body>
+                <header>
+                  <div class="logo">
+                    <a href="./UI/HTML/index.html">
+                      <img src="./UI/assets/fm_logo.png" alt="FreeMentors">
+                    </a>
+                  </div>
+                  <div class="credentials">
+                    <div class="login">
+                    <p>SignIn</p>
+                    </div>
+                    <div class="signup">
+                        <p>SignUp</p>
                         </div>
-                    </section>
-                    <section class="inddetails">
-                        <h5 class="indname">First Name Name</h5>
-                        <h5 class="indcity">City</h5>
-                        <h5 class="indcountry">Country</h5>
-                        <h4 class="indintro">Expertise</h4>
-                        <p class="inddes">Lorem ipsum dolor 
-                            sit amet consectetur adipisicing elit. 
-                            Rem incidunt et saepe autem ipsam quia 
-                            praesentium eius non fuga aperiam!</p>
-                    </section>
-                    <section class="indstats">
-                        <div class="starrate">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                  </div>
+                </header>
+                <div class="welcome"><h1>Welcome To FreeMentors, The Guidance Platform</h1></div>
+                <div class="MainContent">
+                  <div class="featguidefilter">
+                     <aside class="filtercolumn">
+                       <div class="filteringtools">
+                       <h3 class="sectiontitle">Filter</h3>
+                       <div class="closefilter">
+                         <h2>By city</h2>
+                       <form class="validatedform" action="">
+                         <div class="inputaddress">
+                           <i class="filtersearch"></i>
+                           <input type="text">
+                         </div>
+                         <div class="submitsearch">
+                           <button type="submit">search</button>
+                         </div>
+                       </form>
+                      </div>
+                      <div class="closefilter">
+                       <h2>By country</h2>
+                       <form class="validatedform" action="">
+                         <div class="inputsubject">
+                           <i class="filtersearch"></i>
+                           <input type="text">
+                         </div>
+                         <div class="submitsearch">
+                           <button type="submit">search</button>
+                         </div>
+                       </form>
+                      </div>
+                      <div class="closefilter">
+                       <h2>By occupation</h2>
+                       <form class="validatedform" action="">
+                         <div class="inputsubject">
+                           <i class="filtersearch"></i>
+                           <input type="text">
+                         </div>
+                         <div class="submitsearch">
+                           <button type="submit">search</button>
+                         </div>
+                       </form>
+                      </div>
+                      <div class="closefilter">
+                     <h2>By expertise</h2>
+                       <form class="validatedform" action="">
+                         <div class="inputsubject">
+                           <i class="filtersearch"></i>
+                           <input type="text">
+                         </div>
+                         <div class="submitsearch">
+                           <button type="submit">search</button>
+                         </div>
+                       </form>
+                      </div>
+                    </div>
+                      </aside>
+                  </div>
+                  <div class="featguidecore">
+                    <div class="featguidesort">
+                      <form action="">
+                        <div class="entrypoint">
+                          <div class="textcenter">
+                            <select name="sortguide">
+                              <option value="0" selected>Sort by</option>
+                              <option value="1">ID</option>
+                              <option value="2">City</option>
+                              <option value="3">Country</option>
+                              <option value="4">Occupation</option>
+                              <option value="5">Expertize</option>
+                            </select>
+                          </div>
                         </div>
-                    </section>
-                </a>
-            </div>
-            <div class="indcontainer">
-                    <a href="">
-                        <section class="indimg">
-                            <div class="indimgcontainer">
-                                <img src="" alt="guide">
-                              </div>
-                          </section>
-                          <section class="inddetails">
-                              <h5 class="indname">First Name Name</h5>
-                              <h5 class="indcity">City</h5>
-                              <h5 class="indcountry">Country</h5>
-                              <h4 class="indintro">Expertise</h4>
-                              <p class="inddes">Lorem ipsum dolor 
-                                  sit amet consectetur adipisicing elit. 
-                                  Rem incidunt et saepe autem ipsam quia 
-                                  praesentium eius non fuga aperiam!</p>
-                          </section>
-                          <section class="indstats">
+                      </form>
+                    </div>
+                    <div class="featguideindcontainer">
+                      <a href=""><div class="indcontainer">
+                         <section class="guideimage">
+                           <div class="imagecontainer"><img src="" alt="guide"></div>
+                         </section>
+                         <section class="guideprofile">
+                           <h5 class="gninit">John Doe</h5>
+                           <h4 class="shortpro">Occupation</h4>
+                           <p class="guidedes">Lorem ipsum 
+                             dolor sit amet consectetur 
+                             adipisicing elit. 
+                             Ipsa ex, qui provident facilis 
+                             minus cum iure quidem pariatur 
+                             impedit dignissimos?</p>
+                         </section>
+                         <section class="guidestats">
+                           <div class="guidestatscontainer">
                               <div class="starrate">
                                   <span class="fa fa-star checked"></span>
                                   <span class="fa fa-star checked"></span>
@@ -114,240 +124,249 @@
                                   <span class="fa fa-star"></span>
                                   <span class="fa fa-star"></span>
                               </div>
+                        </div>
+                         </section>
+                      </div></a>
+                      <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
                           </section>
-                      </a>
-                  </div>
-                  <div class="indcontainer">
-                        <a href="">
-                            <section class="indimg">
-                                <div class="indimgcontainer">
-                                    <img src="" alt="guide">
-                                  </div>
-                              </section>
-                              <section class="inddetails">
-                                  <h5 class="indname">First Name Name</h5>
-                                  <h5 class="indcity">City</h5>
-                                  <h5 class="indcountry">Country</h5>
-                                  <h4 class="indintro">Expertise</h4>
-                                  <p class="inddes">Lorem ipsum dolor 
-                                      sit amet consectetur adipisicing elit. 
-                                      Rem incidunt et saepe autem ipsam quia 
-                                      praesentium eius non fuga aperiam!</p>
-                              </section>
-                              <section class="indstats">
-                                  <div class="starrate">
-                                      <span class="fa fa-star checked"></span>
-                                      <span class="fa fa-star checked"></span>
-                                      <span class="fa fa-star checked"></span>
-                                      <span class="fa fa-star"></span>
-                                      <span class="fa fa-star"></span>
-                                  </div>
-                              </section>
-                          </a>
-                      </div>
-                      <div class="indcontainer">
-                            <a href="">
-                                <section class="indimg">
-                                    <div class="indimgcontainer">
-                                        <img src="" alt="guide">
-                                      </div>
-                                  </section>
-                                  <section class="inddetails">
-                                      <h5 class="indname">First Name Name</h5>
-                                      <h5 class="indcity">City</h5>
-                                      <h5 class="indcountry">Country</h5>
-                                      <h4 class="indintro">Expertise</h4>
-                                      <p class="inddes">Lorem ipsum dolor 
-                                          sit amet consectetur adipisicing elit. 
-                                          Rem incidunt et saepe autem ipsam quia 
-                                          praesentium eius non fuga aperiam!</p>
-                                  </section>
-                                  <section class="indstats">
-                                      <div class="starrate">
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star"></span>
-                                          <span class="fa fa-star"></span>
-                                      </div>
-                                  </section>
-                              </a>
-                          </div>
-                          <div class="indcontainer">
-                                <a href="">
-                                    <section class="indimg">
-                                        <div class="indimgcontainer">
-                                            <img src="" alt="guide">
-                                          </div>
-                                      </section>
-                                      <section class="inddetails">
-                                          <h5 class="indname">First Name Name</h5>
-                                          <h5 class="indcity">City</h5>
-                                          <h5 class="indcountry">Country</h5>
-                                          <h4 class="indintro">Expertise</h4>
-                                          <p class="inddes">Lorem ipsum dolor 
-                                              sit amet consectetur adipisicing elit. 
-                                              Rem incidunt et saepe autem ipsam quia 
-                                              praesentium eius non fuga aperiam!</p>
-                                      </section>
-                                      <section class="indstats">
-                                          <div class="starrate">
-                                              <span class="fa fa-star checked"></span>
-                                              <span class="fa fa-star checked"></span>
-                                              <span class="fa fa-star checked"></span>
-                                              <span class="fa fa-star"></span>
-                                              <span class="fa fa-star"></span>
-                                          </div>
-                                      </section>
-                                  </a>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
                               </div>
-                              <div class="indcontainer">
-                                    <a href="">
-                                        <section class="indimg">
-                                            <div class="indimgcontainer">
-                                                <img src="" alt="guide">
-                                              </div>
-                                          </section>
-                                          <section class="inddetails">
-                                              <h5 class="indname">First Name Name</h5>
-                                              <h5 class="indcity">City</h5>
-                                              <h5 class="indcountry">Country</h5>
-                                              <h4 class="indintro">Expertise</h4>
-                                              <p class="inddes">Lorem ipsum dolor 
-                                                  sit amet consectetur adipisicing elit. 
-                                                  Rem incidunt et saepe autem ipsam quia 
-                                                  praesentium eius non fuga aperiam!</p>
-                                          </section>
-                                          <section class="indstats">
-                                              <div class="starrate">
-                                                  <span class="fa fa-star checked"></span>
-                                                  <span class="fa fa-star checked"></span>
-                                                  <span class="fa fa-star checked"></span>
-                                                  <span class="fa fa-star"></span>
-                                                  <span class="fa fa-star"></span>
-                                              </div>
-                                          </section>
-                                      </a>
-                                  </div>
-                                  <div class="indcontainer">
-                                        <a href="">
-                                            <section class="indimg">
-                                                <div class="indimgcontainer">
-                                                    <img src="" alt="guide">
-                                                  </div>
-                                              </section>
-                                              <section class="inddetails">
-                                                  <h5 class="indname">First Name Name</h5>
-                                                  <h5 class="indcity">City</h5>
-                                                  <h5 class="indcountry">Country</h5>
-                                                  <h4 class="indintro">Expertise</h4>
-                                                  <p class="inddes">Lorem ipsum dolor 
-                                                      sit amet consectetur adipisicing elit. 
-                                                      Rem incidunt et saepe autem ipsam quia 
-                                                      praesentium eius non fuga aperiam!</p>
-                                              </section>
-                                              <section class="indstats">
-                                                  <div class="starrate">
-                                                      <span class="fa fa-star checked"></span>
-                                                      <span class="fa fa-star checked"></span>
-                                                      <span class="fa fa-star checked"></span>
-                                                      <span class="fa fa-star"></span>
-                                                      <span class="fa fa-star"></span>
-                                                  </div>
-                                              </section>
-                                          </a>
-                                      </div>
-                                      <div class="indcontainer">
-                                            <a href="">
-                                                <section class="indimg">
-                                                    <div class="indimgcontainer">
-                                                        <img src="" alt="guide">
-                                                      </div>
-                                                  </section>
-                                                  <section class="inddetails">
-                                                      <h5 class="indname">First Name Name</h5>
-                                                      <h5 class="indcity">City</h5>
-                                                      <h5 class="indcountry">Country</h5>
-                                                      <h4 class="indintro">Expertise</h4>
-                                                      <p class="inddes">Lorem ipsum dolor 
-                                                          sit amet consectetur adipisicing elit. 
-                                                          Rem incidunt et saepe autem ipsam quia 
-                                                          praesentium eius non fuga aperiam!</p>
-                                                  </section>
-                                                  <section class="indstats">
-                                                      <div class="starrate">
-                                                          <span class="fa fa-star checked"></span>
-                                                          <span class="fa fa-star checked"></span>
-                                                          <span class="fa fa-star checked"></span>
-                                                          <span class="fa fa-star"></span>
-                                                          <span class="fa fa-star"></span>
-                                                      </div>
-                                                  </section>
-                                              </a>
-                                          </div>
-                                          <div class="indcontainer">
-                                                <a href="">
-                                                    <section class="indimg">
-                                                        <div class="indimgcontainer">
-                                                            <img src="" alt="guide">
-                                                          </div>
-                                                      </section>
-                                                      <section class="inddetails">
-                                                          <h5 class="indname">First Name Name</h5>
-                                                          <h5 class="indcity">City</h5>
-                                                          <h5 class="indcountry">Country</h5>
-                                                          <h4 class="indintro">Expertise</h4>
-                                                          <p class="inddes">Lorem ipsum dolor 
-                                                              sit amet consectetur adipisicing elit. 
-                                                              Rem incidunt et saepe autem ipsam quia 
-                                                              praesentium eius non fuga aperiam!</p>
-                                                      </section>
-                                                      <section class="indstats">
-                                                          <div class="starrate">
-                                                              <span class="fa fa-star checked"></span>
-                                                              <span class="fa fa-star checked"></span>
-                                                              <span class="fa fa-star checked"></span>
-                                                              <span class="fa fa-star"></span>
-                                                              <span class="fa fa-star"></span>
-                                                          </div>
-                                                      </section>
-                                                  </a>
-                                              </div>
-                                              <div class="indcontainer">
-                                                    <a href="">
-                                                        <section class="indimg">
-                                                            <div class="indimgcontainer">
-                                                                <img src="" alt="guide">
-                                                              </div>
-                                                          </section>
-                                                          <section class="inddetails">
-                                                              <h5 class="indname">First Name Name</h5>
-                                                              <h5 class="indcity">City</h5>
-                                                              <h5 class="indcountry">Country</h5>
-                                                              <h4 class="indintro">Expertise</h4>
-                                                              <p class="inddes">Lorem ipsum dolor 
-                                                                  sit amet consectetur adipisicing elit. 
-                                                                  Rem incidunt et saepe autem ipsam quia 
-                                                                  praesentium eius non fuga aperiam!</p>
-                                                          </section>
-                                                          <section class="indstats">
-                                                              <div class="starrate">
-                                                                  <span class="fa fa-star checked"></span>
-                                                                  <span class="fa fa-star checked"></span>
-                                                                  <span class="fa fa-star checked"></span>
-                                                                  <span class="fa fa-star"></span>
-                                                                  <span class="fa fa-star"></span>
-                                                              </div>
-                                                          </section>
-                                                      </a>
-                                                  </div>
-                                                                                                                                                                                                      
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      
-    </div>
-
-</body>    
-</html>
+                          </section>
+                       </div></a>
+                       <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
+                          </section>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                         </div>
+                          </section>
+                       </div></a>
+                       <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
+                          </section>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                              </div>
+                          </section>
+                       </div></a>
+                       
+                       <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
+                          </section>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                              </div>
+                          </section>
+                       </div></a>
+                       <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
+                          </section>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div></div>
+                          </section>
+                       </div></a>
+                       <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
+                          </section>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                          </section>
+                       </div></a>
+                       <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
+                          </section>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>   
+                            </div>
+                          </section>
+                       </div></a>
+                       <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
+                          </section>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                          </section>
+                       </div></a>
+                       <a href=""><div class="indcontainer">
+                          <section class="guideimage">
+                            <div class="imagecontainer"><img src="" alt="guide"></div>
+                          </section>
+                          <section class="guideprofile">
+                            <h5 class="gninit">John Doe</h5>
+                            <h4 class="shortpro">Occupation</h4>
+                            <p class="guidedes">Lorem ipsum 
+                              dolor sit amet consectetur 
+                              adipisicing elit. 
+                              Ipsa ex, qui provident facilis 
+                              minus cum iure quidem pariatur 
+                              impedit dignissimos?</p>
+                          </section>
+                          <section class="guidestats">
+                            <div class="guidestatscontainer">
+                                <div class="starrate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                          </section>
+                       </div></a>
+                              </div>
+                  </div>
+                </div>
+                <div class="footer">
+                  
+                </div>
+            
+            </body>    
+            </html>
