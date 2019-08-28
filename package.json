@@ -1,0 +1,28 @@
+{
+  "name": "freementors-2",
+  "version": "1.0.0",
+  "description": "Freementors the Guidance platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeCurious/FreeMentors-2.git"
+  },
+  "keywords": [
+    "freementors",
+    "guidance platform",
+    "api"
+  ],
+  "author": "Florent Nduwayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreeCurious/FreeMentors-2/issues"
+  },
+  "homepage": "https://github.com/FreeCurious/FreeMentors-2#readme",
+  "dependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
