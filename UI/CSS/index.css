@@ -97,6 +97,15 @@ cursor: pointer;
     grid-template-columns: 0.3fr 1fr 1fr;
     text-decoration: none;
 }
+.indcontainer:hover{
+    background-color: #002255ff;
+    color: white;
+    border: 1px solid #f9f9f9ff; 
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    text-decoration: none;
+}
+
 .indcontainer a{
     text-decoration: none;
 }
@@ -122,6 +131,11 @@ cursor: pointer;
     text-decoration: none;
     color: #002255ff;
 }
+.guideprofile:hover{
+    text-decoration: none;
+    color: white;
+}
+
 .featguideindcontainer a{
     text-decoration: none;
 }
