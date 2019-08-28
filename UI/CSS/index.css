@@ -65,7 +65,7 @@ height: 50px;
 .featguidefilter{
     background-color: cadetblue;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
     align-items: stretch;
 }
 .filtercriteria{
@@ -81,7 +81,23 @@ height: 50px;
 .indcontainer{
     background-color: yellowgreen;
 }
-.indcontainer a{
+.indcontainer{
     display: grid;
     grid-template-columns: 0.3fr 1fr 1fr;
+}
+.filteringtools{
+    background-color: darkkhaki;
+    position: fixed;
+    justify-self: center;
+    align-self: center;
+}
+.closefilter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media only screen and(max-width: 1056px){
+    .filteringtools{
+        display: flex;
+        flex-direction: column;
+    }
 }
