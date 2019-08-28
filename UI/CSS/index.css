@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 5px;
+    
     }
 body{
     width:100%;
@@ -19,51 +20,56 @@ header{
     grid-template-columns: 5fr 1fr;
     grid-gap: 1px;  
     vertical-align: middle;
-    background-color: aqua;
-    color: black;
+    color: #002255ff;
     text-shadow: 5px 5px 5px grey;
 }
 .login{
-background-color: salmon;
+background-color: #002255ff;
+color: white;
 text-align: center;
 text-justify: auto;
 height: 50px;
+cursor: pointer;
 }
 .signup{
-    background-color: salmon;
+    background-color: #002255ff;
+    color: white;
     text-align: center;
     text-justify: auto;
-height: 50px;    
+    height: 50px;
+    cursor: pointer;    
 }
 .logo{
     background-color:white;
     align-self: baseline;
-
 }
 .logo img{
     width: inherit;
     height: inherit;
     padding: 1px;
-    background-color: chocolate;
 }
 .credentials{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-gap: 1px;
-    background-color: blueviolet
+    border-bottom: 1px solid #fbcc00ff;
 }
 .welcome{
-    font-style: italic;
+    font-style: initial;
+    color: #fbcc00ff;
+}
+.Featured{
+    color:#002255ff
 }
 
 .MainContent{
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-gap: 1px;
-    background-color: coral;
+    color:#002255ff
 }
 .featguidefilter{
-    background-color: cadetblue;
+    border-right: 1px solid #f9f9f9ff;
     display: grid;
     grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
     align-items: stretch;
@@ -73,31 +79,54 @@ height: 50px;
     grid-template-rows: 1fr 1fr;
 }
 .footer{
-    background-color:chartreuse;
+    background-color:#002255ff;
 }
 .checked{
-    color: red;
+    color: #fbcc00ff;
+}
+.submitsearch button{
+    background-color:#002255ff;
+    color: white;
+    border: 1px solid #fbcc00ff;
+    padding: 10px; 
 }
 .indcontainer{
-    background-color: yellowgreen;
-}
-.indcontainer{
+    background-color: white ;
+    border: 1px solid #f9f9f9ff; 
     display: grid;
     grid-template-columns: 0.3fr 1fr 1fr;
+    text-decoration: none;
+}
+.indcontainer a{
+    text-decoration: none;
+}
+.imagecontainer img{
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
 }
 .filteringtools{
-    background-color: darkkhaki;
-    position: fixed;
+    position: absolute;
     justify-self: center;
     align-self: center;
+}
+.filteringtools input{
+    border: 0.5px solid #002255ff;
 }
 .closefilter{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.guideprofile{
+    text-decoration: none;
+    color: #002255ff;
+}
+.featguideindcontainer a{
+    text-decoration: none;
+}
 @media only screen and(max-width: 1056px){
     .filteringtools{
-        display: flex;
-        flex-direction: column;
+        position: relative;        
     }
 }
