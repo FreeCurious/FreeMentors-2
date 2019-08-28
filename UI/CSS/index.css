@@ -54,10 +54,30 @@ height: 50px;
 
 .MainContent{
     display: grid;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     grid-gap: 1px;
     background-color: coral;
 }
+.featguidefilter{
+    background-color: cadetblue;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+}
+.filtercriteria{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 .footer{
     background-color:chartreuse;
+}
+.checked{
+    color: red;
+}
+.indcontainer{
+    background-color: yellowgreen;
+}
+.indcontainer a{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
 }
