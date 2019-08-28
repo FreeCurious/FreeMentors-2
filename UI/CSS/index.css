@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    border-radius: 15px;
     }
 body{
     width:100%;
@@ -50,6 +51,9 @@ height: 50px;
     grid-template-columns: 1fr 1fr ;
     grid-gap: 1px;
     background-color: blueviolet
+}
+.welcome{
+    font-style: italic;
 }
 
 .MainContent{
