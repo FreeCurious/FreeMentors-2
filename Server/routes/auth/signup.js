@@ -2,8 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 router.post('/', (req, res, next)=>{
+    const user = {
+        name: req.body.name,
+        firstname: req.body.firstname 
+    };
     res.status(200).json({
-       message: 'User created successfully'
+       message: 'User created successfully',
+       createdUser: user
     });
 });
 

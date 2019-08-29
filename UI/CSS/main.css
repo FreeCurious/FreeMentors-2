@@ -37,6 +37,9 @@ header{
     grid-template-columns: 0.15fr 0.15fr 1fr ;
     grid-gap: 1px;
 }
+.psw a{
+    text-decoration: none;
+}
 .userbeacon{
     background: blue;
     justify-items: center;
