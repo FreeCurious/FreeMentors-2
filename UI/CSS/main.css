@@ -19,8 +19,7 @@ header{
     grid-template-columns: 1fr 9fr;
     grid-gap: 1px;  
     vertical-align: middle;
-    color: black;
-    text-shadow: 5px 5px 5px grey;
+    color: white;
 }
 .logo{
     background-color:white;
@@ -41,29 +40,46 @@ header{
     text-decoration: none;
 }
 .userbeacon{
-    background: blue;
+    background:  #002255ff;
     justify-items: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 .beaconbutton{
-    background-color: darkred;
+    background-color: white;
     width:70%;
     align-items: center;
+    text-align: center;
+    text-justify: auto;
+    width: 90px;
+    height: 30px;
 
 }
 .beaconbutton a{
     text-decoration: none;
-    color: white;
+    color: #002255ff;
 }
 .avatar{
     background-color: orange;
     justify-items: center;
     align-items: center;
     text-align: center;
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
+
+}
+.avatar img{
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
 }
 .userid{
-    background-color: blue;
+    background-color: #002255ff;
+    color: white;
     text-align: center;
 
 }
@@ -82,11 +98,11 @@ header{
     align-items: center;
 }
 .firstname{
-    background-color: aqua;
+    background-color: #002255ff;
     text-align: center;
 }
 .name{
-    background-color: blueviolet;
+    background-color: #002255ff;
     text-align: center;
 }
 .MainContent{
@@ -98,18 +114,20 @@ header{
     text-align: center;
     display: grid;
     grid-template-rows: 1fr 0.5fr;
+    color: #002255ff;
+    border-bottom: 1px solid #002255ff;
 }
 .footer{
     background-color:chartreuse;
 }
 .formheader{
-    background-color: cornflowerblue;
+    background-color: white;
     display: grid;
     grid-template-rows: 1fr 1fr;
     text-shadow: 25px 25px 25px grey;
 }
 .formcore{
-    background-color: crimson;
+
     display: grid;
     justify-items: center;
     align-items: center;
@@ -121,17 +139,20 @@ header{
     grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
     justify-items: start;
     align-items: center;
-    width: 70%;
-    background-color: sandybrown;
+    width: 500px;
+    background-color: white;
+    color: #002255ff;
     }
 .formcore input{
-    border-radius: 10px;
+    border-radius: 8px;
     width: 100%;
 }
 .formcore textarea{
-    border-radius: 10px;
-    width: 100%;
-
+    box-shadow: 10px 10px 10px #fefefe;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 500px;
+    max-height: 500px;
 }
 .congratulation{
     justify-items: center;
