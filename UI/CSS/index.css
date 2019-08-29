@@ -75,7 +75,7 @@ cursor: pointer;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-gap: 5px;
-    color:#002255ff
+    color:rgb(231, 231, 231)
 }
 .featguidefilter{
     border-right: 1px solid #f9f9f9ff;
