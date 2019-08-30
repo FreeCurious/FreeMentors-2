@@ -4,9 +4,9 @@ const morgan = require('morgan');
 const bodyParser = require ('body-parser');
 
 
-const signupRoutes = require('./Server/routes/auth/signup');
+const signupRoutes = require('./Server/routes/users/users');
 
-app.use('/signup', signupRoutes);
+app.use('/users', signupRoutes);
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
