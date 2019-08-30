@@ -3,8 +3,10 @@ const router = express.Router();
 
 router.post('/', (req, res, next)=>{
     const user = {
-        name: req.body.name,
-        firstname: req.body.firstname 
+        lastname: req.body.name,
+        firstname: req.body.firstname,
+        city: req.body.city,
+        country: req.body.country 
     };
     res.status(200).json({
        message: 'User created successfully',
