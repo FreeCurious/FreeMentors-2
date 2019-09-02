@@ -151,3 +151,55 @@ cursor: pointer;
 .featguideindcontainer a{
     text-decoration: none;
 }
+.adminbeacon{
+    background:  red;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.avatar{
+    background-color: orange;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
+
+}
+.avatar img{
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.admincreds{
+    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+    float: right;
+}
+.adminid{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.adminname{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    align-items: center;
+}
+.adminfirstname{
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+.adminlastname{
+    background-color: red;
+    text-align: center;
+    color: white;
+}

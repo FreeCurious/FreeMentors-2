@@ -36,11 +36,8 @@ header{
     grid-template-columns: 0.15fr 0.15fr 1fr ;
     grid-gap: 1px;
 }
-.psw a{
-    text-decoration: none;
-}
-.userbeacon{
-    background:  #002255ff;
+.adminbeacon{
+    background:  red;
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -58,7 +55,7 @@ header{
 }
 .beaconbutton a{
     text-decoration: none;
-    color: #002255ff;
+    color: red;
 }
 .avatar{
     background-color: orange;
@@ -77,13 +74,13 @@ header{
     max-width: 100px;
     max-height: 100px;
 }
-.userid{
-    background-color: #002255ff;
+.adminid{
+    background-color: red;
     color: white;
     text-align: center;
 
 }
-.usercreds{
+.admincreds{
     background-color: white;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -91,81 +88,101 @@ header{
     float: right;
 }
 
-.username{
+.adminname{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1px;
     align-items: center;
 }
-.firstname{
-    background-color: #002255ff;
+.adminfirstname{
+    background-color: red;
     text-align: center;
 }
-.name{
-    background-color: #002255ff;
+.adminlastname{
+    background-color: red;
     text-align: center;
 }
 .MainContent{
     display: grid;
-    grid-template-rows: 0.1fr 1fr;
-    grid-gap: 1px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-.formheader{
-    text-align: center;
+.assigned{
     display: grid;
-    grid-template-rows: 1fr 0.5fr;
-    color: #002255ff;
-    border-bottom: 1px solid #002255ff;
+    grid-template-columns: 1fr 1fr;
 }
-.footer{
-    background-color:chartreuse;
-}
-.formheader{
-    background-color: white;
+.featguidefilter{
+    border-right: 1px solid #f9f9f9ff;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    text-shadow: 25px 25px 25px grey;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+    align-items: stretch;
 }
-.formheader h1{
-    color: #fbcc00ff;
-}
-.formcore{
 
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    width: 70%;
+.filteringtools{
+    position: absolute;
     justify-self: center;
+    align-self: center;
 }
-.formcore form{
+.filteringtools input{
+    border: 0.5px solid red;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+h2{
+    color: red;
+    text-align: center;
+}
+.closefilter{
     display: grid;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
-    justify-items: start;
-    align-items: center;
-    width: 500px;
-    background-color: white;
-    color: #002255ff;
-    }
-.formcore input{
-    border-radius: 8px;
-    padding: 5px;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
 }
-.formcore textarea{
-    box-shadow: 10px 10px 10px #fefefe;
-    border-radius: 8px;
-    padding: 8px;
-    max-width: 500px;
-    max-height: 500px;
+.submitsearch button{
+    background-color:red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9; 
 }
-.gsrsubmit{
-    color: #fbcc00ff;
+.featguideindcontainer a{
+    text-decoration: none;
 }
-.congratulation{
-    justify-items: center;
-    text-align: center;
+.indcontainer{
+    background-color: white ;
+    border: 1px solid #f9f9f9ff; 
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    text-decoration: none;
 }
-.congcore{
-    justify-items: center;
-    text-align: center;
+.indcontainer:hover{
+    background-color: red;
+    color: white;
+    border: 1px solid #f9f9f9ff; 
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    text-decoration: none;
+}
+
+.indcontainer a{
+    text-decoration: none;
+}
+.imagecontainer img{
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.guideprofile{
+    text-decoration: none;
+    color: red;
+}
+.guideprofile:hover{
+    text-decoration: none;
+    color: white;
+}
+.nextfeatured{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
