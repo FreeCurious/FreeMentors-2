@@ -1,13 +1,12 @@
 *{
     box-sizing: border-box;
+    border-radius: 5px;
     
     }
 body{
     width:100%;
     display: grid;
-    grid-template-rows: repeat(1fr, 4fr,1fr);
-    grid-gap: 1px; 
-    background-color: white;
+    background-image: url(../assets/GuidingPrinciples-HeroImage-WomanCompass-1600x900.jpg);
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     outline-offset: 3px;
@@ -15,175 +14,134 @@ body{
 }
 header{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    grid-gap: 1px;  
-    vertical-align: middle;
-    color: white;
-}
-.logo{
-    background-color:white;
-    align-self: baseline;
-
-}
-.logo img{
-    width: inherit;
-    height: inherit;
-    padding: 1px;
-}
-.credentials{
-    display: grid;
-    grid-template-columns: 0.15fr 0.15fr 1fr ;
-    grid-gap: 1px;
-}
-.guidebeacon{
-    background:  #fbcc00ff;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-.beaconbutton{
+    max-height: 500px;
     background-color: white;
-    width:70%;
-    align-items: center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.navbar{
+  background-color: #002255ff;
+  overflow: hidden;
+}  
+.navbar a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
-    text-justify: auto;
-    width: 90px;
-    height: 30px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 1;
+  }
+  .navbar a:hover{
+    
+        background-color: #fbcc00ff;
+        color: white;
+
+  }
+  .creds{
+    background-color: #fbcc00ff;
+    overflow: hidden;
+    
+  }
+  .creds a{
+      color: white;
+      text-align: center;
+      padding: 10px 12px;
+      text-decoration: none;
+      font-size: 15px;
+      justify-content: right;
+      float: right;
+  }
+  .creds a:hover{
+      background-color: #002255ff;
+      color: white; 
+  }
+.MainContent{
+    margin: 5% 5% 5% 5%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 10px;
+}
+.MainContent h1{
+    color:#fbcc00ff;
+    text-decoration-line: underline;
+}
+.aboutus{
+    background: #002255ff;
+    color: white;
+    text-align: justify;
+    opacity: 0.7;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+.featguides{
+    position: relative;
+    width: 120%;
+    height: 30%;
+    margin: 20px auto;
 
 }
-.beaconbutton a{
-    text-decoration: none;
-    color: #fbcc00ff;
+.featguides .guidecards {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(400px - 30px);
+    background: #002255ff;
+    float: left;
+    margin: 15px;   
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;    
+
 }
-.avatar{
-    background-color: orange;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    min-width: 70px;
-    min-height: 70px;
-    max-width: 100px;
-    max-height: 100px;
+.featguides .guidecards .avatar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fbcc00ff;
+    transition: 0.5s;
+    z-index: 1;
 
 }
 .avatar img{
-    min-width: 70px;
-    min-height: 70px;
-    max-width: 100px;
-    max-height: 100px;
+    width: inherit;
+    height: inherit;
 }
-.guideid{
-    background-color: #fbcc00ff;
-    color: white;
-    text-align: center;
 
+.footer{
+    background-color: #fbcc00ff;
+    background-size: cover;
+    width: 100%;
+    max-height: 320px;
+    text-align: center;
+    display: block;
 }
-.guidecreds{
-    background-color: white;
+.ftdtctn{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.guide{
+    background-color: #ffcc00ff;
+    justify-content: right;
     float: right;
-    text-align: center;
-}
-
-.guidename{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1px;
-    align-items: center;
-}
-.guidefirstname{
-    background-color: #fbcc00ff;
-    text-align: center;
-}
-.guidelastname{
-    background-color: #fbcc00ff;
-    text-align: center;
-}
-.MainContent{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-.assigned{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.featguidefilter{
-    border-right: 1px solid #f9f9f9ff;
-    display: grid;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
-    align-items: stretch;
-}
-
-.filteringtools{
-    position: absolute;
-    justify-self: center;
-    align-self: center;
-}
-.filteringtools input{
-    border: 0.5px solid #fbcc00ff;
-}
-h1{
-    color: #fbcc00ff;
-    text-align: center;
-}
-h2{
-    color: #fbcc00ff;
-    text-align: center;
-}
-.closefilter{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.submitsearch button{
-    background-color:#fbcc00ff;
+    margin-left: 85%;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    opacity: 0.9; 
+    text-align: center;
 }
-.featguideindcontainer a{
-    text-decoration: none;
-}
-.indcontainer{
-    background-color: white ;
-    border: 1px solid #f9f9f9ff; 
-    display: grid;
-    grid-template-columns: 0.3fr 1fr 1fr;
-    text-decoration: none;
-}
-.indcontainer:hover{
-    background-color: red;
-    color: white;
-    border: 1px solid #f9f9f9ff; 
-    display: grid;
-    grid-template-columns: 0.3fr 1fr 1fr;
-    text-decoration: none;
-}
+@media screen and (max-width: 300px){
+    .footer{
+        background-color: #fbcc00ff;
+        background-size: cover;
+        width: 100%;
+        max-height: 320px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 
-.indcontainer a{
-    text-decoration: none;
-}
-.imagecontainer img{
-    min-width: 70px;
-    min-height: 70px;
-    max-width: 100px;
-    max-height: 100px;
-}
-.guideprofile{
-    text-decoration: none;
-    color: red;
-}
-.guideprofile:hover{
-    text-decoration: none;
-    color: white;
-}
-.nextfeatured{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
