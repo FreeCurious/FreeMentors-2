@@ -1,13 +1,10 @@
-let express=require('express')();
+var mainav= document.getElementById('mainav');
+window.onscroll = function(){
+    if(window.pageYOffset >100){
 
-app.get('/',function(req, res){
-    res.send('Hello World');
-})
-
-var server=app.listen(3000, function(){
-    var host=server.adress().address;
-    host=(host==='::'?'localhost':host);
-    var port=server.address().port;
-
-    console.log('listening at http://%s:%s',host,port);
-});
+        mainav.style.background = "#002255ff";
+    }
+    else{
+        mainav.style.background = "transparent";
+    }
+}
