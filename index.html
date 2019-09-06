@@ -7,378 +7,134 @@
      <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./UI/CSS/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./UI/js/main.js"></script>
+    <script src="./UI/js/index.js"></script>
    </head>
    <body>
-            <header>
-                  <div class="logo">
-                    <a href="./UI/HTML/index.html">
-                      <img src="./UI/assets/fm_logo.png" alt="FreeMentors">
-                    </a>
-                  </div>
-                  <div class="credentials">
-                    <button class="login">
-                      <a href="./UI/HTML/Credentials.html"><p>SignIn</p></a>
-                    </button>
-                    
-                    <button class="signup">
-                        <a href="./UI/HTML/Credentials.html"><p>SignUp</p></a>
-                    </button>
-                  </div>
-                </header>
-                <div class="welcome"><h1>Welcome To FreeMentors, The Guidance Platform</h1></div>
-                <div class="Featured"><h2>Meet some of our most Effective Guides</h2></div>
+        <div class="creds"><a href="./UI/HTML/signin.html" id="signin">SignIn</a> 
+         <a href="./UI/HTML/signup.html" id="signup">SignUp</a>
+     </div>
 
-                <div class="MainContent">
+         <header>
+     <div class="logo"><a href="./UI/HTML/index.html"><img src="./UI/assets/fm_logo.png" alt="FreeMentos"></a></div>
+      <div class="navbar">
+       <a href="#aboutus">About Us</a>
+       <a href="#guides">Guidance</a>
+      </div>     
+            
 
-                  <div class="featguidefilter">
-                     <aside class="filtercolumn">
-                       <div class="filteringtools">
-                       <h3 class="sectiontitle">Filter</h3>
-                       <div class="closefilter">
-                         <h2>By city</h2>
-                       <form class="validatedform" action="">
-                         <div class="inputaddress">
-                           <i class="filtersearch"></i>
-                           <input type="text">
-                         </div>
-                         <div class="submitsearch">
-                           <button type="submit">search</button>
-                         </div>
-                       </form>
-                      </div>
-                      <div class="closefilter">
-                       <h2>By country</h2>
-                       <form class="validatedform" action="">
-                         <div class="inputsubject">
-                           <i class="filtersearch"></i>
-                           <input type="text">
-                         </div>
-                         <div class="submitsearch">
-                           <button type="submit">search</button>
-                         </div>
-                       </form>
-                      </div>
-                      <div class="closefilter">
-                       <h2>By occupation</h2>
-                       <form class="validatedform" action="">
-                         <div class="inputsubject">
-                           <i class="filtersearch"></i>
-                           <input type="text">
-                         </div>
-                         <div class="submitsearch">
-                           <button type="submit">search</button>
-                         </div>
-                       </form>
-                      </div>
-                      <div class="closefilter">
-                     <h2>By expertise</h2>
-                       <form class="validatedform" action="">
-                         <div class="inputsubject">
-                           <i class="filtersearch"></i>
-                           <input type="text">
-                         </div>
-                         <div class="submitsearch">
-                           <button type="submit">search</button>
-                         </div>
-                       </form>
-                      </div>
-                    </div>
-                      </aside>
-                  </div>
-                  <div class="featguidecore">
-                    <div class="featguidesort">
-                      <form action="">
-                        <div class="entrypoint">
-                          <div class="textcenter">
-                            <select name="sortguide">
-                              <option value="0" selected>Sort by</option>
-                              <option value="1">ID</option>
-                              <option value="2">City</option> 
-                              <option value="3">Country</option>
-                              <option value="4">Occupation</option>
-                              <option value="5">Expertize</option>
-                            </select>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="featguideindcontainer">
-                      <a href=""><div class="indcontainer">
-                         <section class="guideimage">
-                           <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                         </section>
-                         <section class="guideprofile">
-                           <h5 class="gninit">John Doe</h5>
-                           <h4 class="shortpro">City, Country</h4>
-                           <h4 class="shortpro">Occupation</h4>
-                           <p class="guidedes">Lorem ipsum 
-                             dolor sit amet consectetur 
-                             adipisicing elit. 
-                             Ipsa ex, qui provident facilis 
-                             minus cum iure quidem pariatur 
-                             impedit dignissimos?</p>
-                         </section>
-                         <section class="guidestats">
-                           <div class="guidestatscontainer">
-                              <div class="starrate">
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star"></span>
-                                  <span class="fa fa-star"></span>
-                              </div>
-                        </div>
-                         </section>
-                      </div></a>
-                      <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                              </div>
-                          </section>
-                       </div></a>
-                       <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                         </div>
-                          </section>
-                       </div></a>
-                       <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                              </div>
-                          </section>
-                       </div></a>
-                       
-                       <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                              </div>
-                          </section>
-                       </div></a>
-                       <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div></div>
-                          </section>
-                       </div></a>
-                       <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </div>
-                          </section>
-                       </div></a>
-                       <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>   
-                            </div>
-                          </section>
-                       </div></a>
-                       <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </div>
-                          </section>
-                       </div></a>
-                       <a href=""><div class="indcontainer">
-                          <section class="guideimage">
-                            <div class="imagecontainer"><img src="./UI/assets/avatars.png" alt="guide"></div>
-                          </section>
-                          <section class="guideprofile">
-                            <h5 class="gninit">John Doe</h5>
-                            <h4 class="shortpro">City, Country</h4>
-                            <h4 class="shortpro">Occupation</h4>
-                            <p class="guidedes">Lorem ipsum 
-                              dolor sit amet consectetur 
-                              adipisicing elit. 
-                              Ipsa ex, qui provident facilis 
-                              minus cum iure quidem pariatur 
-                              impedit dignissimos?</p>
-                          </section>
-                          <section class="guidestats">
-                            <div class="guidestatscontainer">
-                                <div class="starrate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </div>
-                          </section>
-                       </div></a>
-                              </div>
-                  </div>
+    </header>
+
+    <div class="MainContent">
+        <h1 id="aboutus">About Us</h1>
+      <div class="aboutus">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Accusamus nulla sunt soluta voluptatum excepturi qui quasi placeat tempora consequatur 
+        eveniet odio aut quo quam dolorum tempore reiciendis iste explicabo, assumenda aspernatur! 
+        Assumenda accusantium nihil ipsum nobis eveniet obcaecati iste corrupti sapiente blanditiis. 
+        Laborum recusandae animi voluptatibus voluptatem, repellendus quam ratione temporibus. 
+        Fuga delectus voluptate error quo reiciendis quisquam velit iure. 
+        Doloribus ullam magni fugiat quibusdam excepturi nihil placeat quam inventore debitis velit qui officiis ad, 
+        quos harum illo labore natus fugit numquam totam laboriosam, 
+        eius tempore sequi voluptas cupiditate. 
+        Cumque neque delectus, quae doloremque vel distinctio pariatur, esse, 
+        nam ab iusto ducimus officiis illum quasi illo saepe nemo consequatur perspiciatis maiores accusantium quam ipsam architecto in quisquam. 
+        Officiis incidunt, quas voluptate ipsa similique aperiam nobis aut hic deserunt placeat dolorem quisquam molestiae vel perferendis. 
+        Quo aliquid nisi ullam blanditiis illo deserunt, nesciunt iure at ea reiciendis beatae sed, 
+        cum iste quod nostrum porro dicta repellendus cupiditate eius esse placeat. 
+        Modi voluptatum soluta, laudantium possimus porro quaerat tempora fugiat tempore vitae consectetur cum iure sequi ullam distinctio suscipit quia deleniti nulla totam iste delectus? 
+        Eaque, distinctio veritatis tempore voluptatibus quae odit laborum perspiciatis excepturi maxime, 
+        cumque porro dicta voluptatum ad. 
+        Quo, praesentium velit rem cupiditate tempora reprehenderit suscipit nam dicta eligendi enim possimus? 
+        Explicabo, et molestiae atque unde, laudantium quas animi nihil distinctio delectus ipsa a repudiandae veniam ullam cupiditate obcaecati placeat corporis natus at error soluta, 
+        sequi eaque nesciunt nisi! Aspernatur delectus, 
+        temporibus quasi perspiciatis tempore harum culpa animi modi!</div>            
+        <h1 id="guides">Meet some of our Most Prolific Guides</h1>
+           <div class="featguides">
+             <div class="guidecards">
+               <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+             <div class="guidecards">
+                <div class="avatar"><img src="./UI/assets/avatars.png" alt=""></div>
+
+             </div>
+
+            
+           </div> 
                 </div>
+                            
+                
                 <div class="footer">
-                  
+                   <div class="ftdtctn">
+                      <div class="address"> 
+                         <p id="compname">FreeMentors</p>
+                         <hr>
+                        <p>Anywhere</p>
+                        <hr>
+                        <p>Anywhere</p>
+                        <hr>
+                        <p>Anywhere</p>
+                        <hr>
+                        <p>The World</p> 
+                     </div>
+                      <div class="extlinks">
+                        <a href="https://www.codementor.io/"><p>Codementor</p></a>
+                        <hr>
+                        <a href="https://www.wyzant.com/"><p>Wyzant</p></a>
+                        <hr>
+                        <a href="http://www.impulse.ma/"><p>Impulse.ma</p></a>
+                        <hr>
+                        <a href="https://www.management-mentors.com/"><p>Management Mentors</p></a>
+                        <hr>
+                        <a href="https://www.skillsyouneed.com/learn/mentoring.html">Skills You Need</a>
+                      </div>
+                      <div class="quickaccess">
+                         <a href="./UI/HTML/signin.html"> <p>SignIn</p> </a>
+                         <hr>
+                         <a href="./UI/HTML/signup.html"> <p>SignUp</p> </a>
+                         <hr>
+                      </div>
+                   </div>
+                  <p>Copyright© FreeMentors 2019 till 2024</p>  
                 </div>
             
             </body>    
